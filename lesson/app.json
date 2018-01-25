@@ -1,0 +1,20 @@
+{
+  "pages": [
+       
+    "pages/message/message",
+    "pages/home/home",
+    "pages/info/info",
+     "pages/socialshare/socialshare",
+    "pages/utils/utils"
+  
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "个人简历",
+    "backgroundColor": "#999",
+    "backgroundTextStyle": "#666"
+   
+  }
+}

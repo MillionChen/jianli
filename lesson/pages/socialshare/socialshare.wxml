@@ -1,0 +1,14 @@
+<view>
+  <text class='aihao blog'>技术领域</text>
+    <canvas canvas-id="radarCanvas" class='canvas canva3'></canvas>
+</view> 
+<view>
+  <text class='aihao blog'>兴趣爱好</text>
+    <canvas canvas-id="columnCanvas" class='canvas canvas2'></canvas>
+</view>
+
+<view class="container">
+<text class='blog aihao'>我的常去的社交区</text>
+    <canvas canvas-id="pieCanvas" class="canvas canvas1"></canvas>
+  
+</view>

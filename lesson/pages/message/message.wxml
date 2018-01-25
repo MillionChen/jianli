@@ -1,0 +1,39 @@
+<view class='o'>
+
+<!--kaishi  -->
+<!--pages/message/message.wxml-->
+<audio poster="{{poster}}" style="width:100%" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<view class='container'>
+  <view class='header'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516457247546&di=030dbb3b0aa85d6f144eb3c8fd54bdda&imgtype=0&src=http%3A%2F%2Fpic29.nipic.com%2F20130530%2F11557414_143541670100_2.jpg' catchtap='goHome' class='user-image'></image>
+
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516457313517&di=2c226ba7d3813b0883507ded36480f5b&imgtype=0&src=http%3A%2F%2Fimage.tupian114.com%2F20130121%2F04502708.jpg' catchtap='goInfo' catchtap='goHome' class='user-tree'
+    />
+    <text class="iconfont icon-click dianji2"></text>
+    <!-- <text class="iconfont icon-dianji"></text>  -->
+  </view>
+  <view class='content-body'>
+    <view class='use-info user' catchtap='goInfo'>
+      <text class='iconfont icon-socialwindows slideInLeft'></text>
+      <text class='slideInRight'>历练记</text>
+      <text class="iconfont icon-dianji"></text>
+    </view>
+    <view class='use-socialshar user' catchtap='goSocialshar'>
+      <text class='iconfont icon-socialshare slideInLeft'></text>
+      <text class='slideInRight'>技能图</text>
+      <text class="iconfont icon-dianji"></text>
+    </view>
+    <view class='whataphpon-group user' bindtap="calling">
+      <text class='iconfont icon-socialwhatsapp slideInLeft'></text>
+      <text class='slideInRight'>联系我</text>
+      <text class="iconfont icon-dianji"></text>
+    </view>
+  </view>
+  
+</view>
+<view class='thanks-box'>
+    <text class='thanks-title'>致谢</text>
+      <text capture-bind:longtap="clearTimer" class="thanks-text iconfont icon-cooperation">{{text}} </text>  
+  </view>
+
+</view>

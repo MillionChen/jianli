@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="info" wx:for="{{arr.info}}">
+    <text class="infoName">{{item.infoName}}</text>
+    <text class='hot'>🔥</text>
+    <block wx:if="{{item.phone}}">
+      <text class="infoVal {{item.phone}}"  bindtap='calling'>{{item.infoVal}}</text>
+    </block>
+    <block wx:else>
+      <text class="infoVal">{{item.infoVal}}</text>
+    </block>
+  </view>
+</view>

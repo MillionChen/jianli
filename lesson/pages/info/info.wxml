@@ -1,0 +1,28 @@
+<!--pages/info/info.wxml-->
+<view class='user-info-page'>
+  <swiper autoplay="{{true}}" vertical="{{false}}" circular="{{true}}" interval="{{2000}}" style='width:100%' indicator-dots="{{true}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}" >
+      <swiper-item>
+        <image src="{{item}}" style='width:100%' class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--Jianli  -->
+  <view class='content'>
+    <view class='work-group'>
+      <view class='work-title'>
+        <!-- <image src='../../images/company.png'></image> -->
+        <text style='margin-right:10rpx;'>🏢</text>
+        <text style='font-size:24rpx;line-height:50rpx'>xxx公司</text>
+      </view>
+      <view class='content'>
+        <text class='zhiwei jingli'>职位:高级软件开发工程师</text>
+        <text class='jingli'>时间：xxx.xxx.xxx</text>
+        <text class='work-info jingli'>工作描述:</text>
+        <text class='work-info jingli'>sdsgfsgdfgfdxxxxxxxxxxxxxxxxxxx</text>
+      </view>
+        <text style='margin-right:10rpx;'>以上数据未待上传</text>
+    </view>
+  </view>
+</view>
+ 

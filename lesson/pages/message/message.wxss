@@ -1,0 +1,176 @@
+/* pages/message/message.wxss */
+
+.container {
+  padding: 0rpx 50rpx;
+  overflow: hidden;
+}
+
+.wx-audio-default {
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  margin: 100rpx auto 0;
+  display: flex;
+  align-items: center;
+}
+
+.header .user-image {
+  border-radius: 50%;
+  /* float: left; */
+  width: 200rpx;
+  height: 200rpx;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 2px 0 #000, 2px 0px 0 #000, 2px 2px 2px #000;
+  z-index: 10;
+  animation: myscale 1s infinite both linear;
+  animation-delay: 4.7s;
+}
+
+@keyframes myscale {
+  0%, 100% {
+    transform: scale(1) translateY(-12px);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+}
+
+.user-tree {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  border-radius: 30%;
+  left: 28%;
+  top: -50rpx;
+  animation: my-animation 5s 1 both;
+  z-index: 1;
+}
+
+@keyframes my-animation {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.content-body {
+  padding: 100rpx 60rpx 0;
+}
+
+.user {
+  width: 50%;
+  display: flex;
+  margin-bottom: 80rpx;
+}
+
+.user text {
+  margin-left: 20rpx;
+  color: #666;
+}
+
+/*动画  */
+
+.slideInLeft {
+  opacity: 0;
+  animation: slideInLeft 1s both;
+}
+
+.slideInRight {
+  opacity: 0;
+  animation: slideInRight 1s both;
+  animation-delay: 0.2s;
+}
+
+/*end  */
+
+.user text.iconfont {
+  margin-top: 10rpx;
+}
+
+.icon-dianji {
+  color: #000;
+  box-shadow: 2px 2px 2px solid #f40;
+  opacity: 0;
+  animation: my 1s infinite forwards;
+  animation-delay: 0.92s;
+  position: absolute;
+  left: 38%;
+}
+
+.dianji2 {
+  position: absolute;
+  left: 63%;
+  z-index: 999;
+  animation: bounceOut 1s infinite forwards;
+  animation-delay: 4.92s;
+}
+
+@keyframes my {
+  0%, 100% {
+    transform: rotate(30deg);
+    opacity: 1;
+    transform: scale(0.8) rotate(310deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5) rotate(310deg);
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/*致谢  */
+.thanks-box{
+  font-size: 32rpx;
+   position: relative;
+   box-sizing: border-box;
+   overflow: hidden;
+   width: 92%;
+  margin: 0 auto;
+
+}
+.thanks-title {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0rpx;
+  padding-left: 30rpx;
+  margin-bottom: 30rpx;
+
+}
+.thanks-title::before{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10rpx;
+  height: 50rpx;
+  top:-4rpx;
+  left: 10rpx;
+  background: #999;
+}
+.thanks-title::after{
+   position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3rpx;
+  bottom: -16rpx;
+  left: 10rpx;
+  background: #666;
+}
+.thanks-text{
+  font-size: 28rpx; 
+  display: block;
+  color: #666;
+
+}

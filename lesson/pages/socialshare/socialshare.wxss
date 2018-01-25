@@ -1,0 +1,23 @@
+.blog{
+  display: inline-block;
+  /* text-align: center; */
+  font-size: 30rpx;
+  width: 100%;
+  color: #666;
+  position: relative;
+  /* top:10px; */
+}
+.aihao{
+  /* top:10rpx; */
+  left: 20rpx;
+}
+.canvas{
+    width: 100%;
+    height: 300px; 
+}
+.canvas2{
+  height: 200px; 
+}
+.canva3{
+  height: 150px; 
+}

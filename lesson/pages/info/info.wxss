@@ -1,0 +1,91 @@
+/* pages/info/info.wxss */
+
+  .user-info-page{ 
+
+   height: 160%;
+   overflow: hidden;
+   background-size: 100%;
+
+ }  
+.user-info-header{
+  position: relative;
+   height: 300rpx;
+  /* border: 1rpx solid #f40; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top,rgba(255,255,0,.2),rgba(23,20,10,1));
+}
+.user-info-header .info-bgmage{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 300rpx;
+     /* border: 1rpx solid #f40; */
+   
+
+}
+.user-info-header .user-img-box{
+text-align: center
+}
+.user-img-box image{
+  display: block;
+  margin: 30rpx auto 0;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  /* border: 1rpx solid #f40; */
+}
+.user-img-box .header-text{
+  font-size: 16rpx;
+  color: #333;
+  text-shadow: 1rpx 0rpx 0 #000;
+}
+.user-img-box .quotes{
+  margin-top: 20rpx;
+   font-size: 16rpx;
+    color: #666;
+}
+/*content  */
+.content{
+  height: 100%;
+   /* background: url("");  */
+   
+}
+.work-group{
+  padding: 30rpx;
+}
+.work-group .work-title{
+  display: flex;
+}
+.work-title image{
+  flex: 1;
+  height: 30rpx;
+}
+/* .work-title text{
+  flex: 1;
+} */
+
+.jingli{
+  display:block;font-size:24rpx;line-height:50rpx;
+}
+
+/*开始  */
+
+.example {
+  display: block;
+  width: 100%;
+  height: 100rpx;
+
+}
+
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}
